@@ -2,6 +2,9 @@
 @use 'vars';
 @use 'header';
 @use 'hero';
+@use 'middleContent';
+@use 'mainContent';
+@use 'footer';
 
 // .oxygen-light {
 //     font-family: "Oxygen", serif;
@@ -38,6 +41,21 @@ html{
 h1,h2,h3,h4{
     font-family: "Oxygen", serif;
     font-weight: 700;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12{
+    width: 100%;
 }
 
 

@@ -24,7 +24,6 @@
 
         img{
             width: 100%;
-           
         }
     }
 
@@ -50,6 +49,47 @@
         &__iconPlay{
             display: block;
             margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 56.25em){
+    .hero__banner{
+        background-image: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hero__banner .maxWidth{
+        margin: initial;
+        margin-bottom: 4em;
+        width: 75%;
+    }
+}
+
+@media (min-width: 74em){
+    .hero__banner{
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        max-height: 80vh;
+        width: 100%;
+        background-position: center top;
+        background-color: vars.$primaryColor;
+        background-repeat: no-repeat;
+
+        .maxWidth{
+            width: 50%;
+        }
+
+        &__iconPlay{
+            width: 7em;
+            height: 7em;
+        }
+
+        &__title, &__subtitle{
+            text-shadow: 4px 4px 2px black;
         }
     }
 }
