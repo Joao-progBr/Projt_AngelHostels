@@ -1,0 +1,55 @@
+@use 'vars';
+
+.hero__banner{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1em;
+
+    &__title{
+        color: vars.$primaryColor;
+        font-size: 1.5em;
+        margin: 1.5em 0;
+    }
+
+    &__subtitle{
+        font-size: 1em;
+        color: color-mix(in srgb,  vars.$primaryColor, white 40%);
+        line-height: 1.5em;
+    }
+
+    &__iconPlay{
+        height: 5em;
+        width: 5em;
+        display: none;
+
+        img{
+            width: 100%;
+           
+        }
+    }
+
+    .btn{
+        display: inline-block;
+        padding: .9em 2em;
+        background-color: #58c4c4;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 48.75em){
+    .hero__banner{
+        background-color: vars.$primaryColor;
+        color: white;
+
+        &__title, &__subtitle{
+            color: white;
+        }
+
+        &__iconPlay{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

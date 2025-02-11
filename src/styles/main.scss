@@ -1,0 +1,51 @@
+@use 'normalizeCss';
+@use 'vars';
+@use 'header';
+@use 'hero';
+
+// .oxygen-light {
+//     font-family: "Oxygen", serif;
+//     font-weight: 300;
+//     font-style: normal;
+//   }
+  
+//   .oxygen-regular {
+//     font-family: "Oxygen", serif;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
+  
+//   .oxygen-bold {
+//     font-family: "Oxygen", serif;
+//     font-weight: 700;
+//     font-style: normal;
+//   }
+  
+
+
+html{
+    font-family: "Oxygen", serif;
+    font-weight: 400;
+}
+
+.maxWidth{
+    // max-width: 1024px;
+    max-width: 70.25em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4{
+    font-family: "Oxygen", serif;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
